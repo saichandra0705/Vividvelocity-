@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vividvelocity | Accelerating Talent. Empowering Businesses.</title>
+<meta name="description" content="Vividvelocity connects exceptional talent with leading organizations across India through IT recruitment and staffing solutions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#0f2a5c;--primary-soft:#eef2fa;--accent:#e8702a;--accent-soft:#fdf1ea;--fg:#1c2433;--muted:#5a6579;--border:#dfe4ee;--secondary:#f5f7fb}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:Inter,system-ui,sans-serif;color:var(--fg);background:#fff;line-height:1.5;padding-top:72px;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}ul{list-style:none}address{font-style:normal}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:80px 0;border-bottom:1px solid var(--border)}
+.alt{background:rgba(245,247,251,.7)}
+.eyebrow{font-size:.8125rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+h1,h2,h3{color:var(--primary);line-height:1.15;letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,5vw,3.5rem);margin-top:16px}
+h2{font-size:clamp(1.75rem,4vw,2.75rem);margin-top:20px}
+h3{font-size:1.125rem;font-weight:600}
+.lead{margin-top:24px;max-width:36rem;color:var(--muted);font-size:1.05rem;line-height:1.7}
+.lead+.lead{margin-top:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 24px;font:600 1rem Inter,sans-serif;border:1px solid transparent;border-radius:6px;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.b-a{background:var(--accent);color:#fff}.b-a:hover{background:#d4621f}
+.b-p{background:var(--primary);color:#fff}
+.b-o{border-color:var(--border);color:var(--primary)}.b-o:hover{border-color:var(--primary);background:var(--primary-soft)}
+.b-w{border-color:rgba(255,255,255,.3);color:#fff}.b-w:hover{background:rgba(255,255,255,.1)}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+svg.lucide{width:28px;height:28px;stroke-width:1.5;color:var(--accent)}
+/* header */
+header{position:fixed;inset:0 0 auto;z-index:50;background:#fff;border-bottom:1px solid transparent;transition:.3s}
+header.s{border-color:var(--border);background:rgba(255,255,255,.95);backdrop-filter:blur(10px)}
+.bar{height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-size:1.35rem;font-weight:700;color:var(--primary);letter-spacing:-.02em}.logo img{display:block;width:140px;height:auto}
+.logo b{color:var(--accent)}
+.nav-d,.cta-d{display:none;align-items:center}
+.nav-d{gap:28px}.cta-d{gap:12px}
+.nav-d a{position:relative;padding:8px 0;font-size:.9375rem;font-weight:500;color:rgba(28,36,51,.75);transition:color .2s}
+.nav-d a:hover,.nav-d a.on{color:var(--primary)}
+.nav-d a.on:after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--accent)}
+.cta-d .btn{min-height:44px;padding:10px 20px;font-size:.9375rem}
+.tg{width:44px;height:44px;border:1px solid var(--border);border-radius:6px;background:#fff;color:var(--primary);font-size:1.3rem;cursor:pointer}
+#mnav{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;overflow:auto;background:#fff;border-top:1px solid var(--border)}
+#mnav.open{display:block}
+#mnav nav{display:flex;flex-direction:column;padding:16px 24px 40px}
+#mnav nav>a:not(.btn){padding:16px 0;border-bottom:1px solid var(--border);font-size:1.125rem;font-weight:600;color:rgba(28,36,51,.85)}
+#mnav nav>a.on{color:var(--primary)}
+#mnav .btn{margin-top:12px;min-height:56px}#mnav .btn:first-of-type{margin-top:28px}
+@media(min-width:1024px){.nav-d,.cta-d{display:flex}.tg,#mnav{display:none!important}}
+/* layout */
+.split{display:grid;gap:48px;align-items:center}
+@media(min-width:900px){.split{grid-template-columns:1fr 1fr;gap:64px}}
+.grid{display:grid;gap:1px;background:var(--border);border:1px solid var(--border);margin-top:56px}
+.grid>*{background:#fff;padding:32px}
+@media(min-width:640px){.g2,.g4{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.g4{grid-template-columns:repeat(4,1fr)}}
+.grid h3{margin-top:24px}.grid p{margin-top:12px;color:var(--muted);font-size:.9375rem;line-height:1.7}
+.mv{margin-top:0}.mv>*{padding:40px}
+.mv h3{margin-top:24px;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.mv p{margin-top:20px;font-size:clamp(1.15rem,2vw,1.5rem);line-height:1.6;font-weight:500;color:var(--primary)}
+.link{display:inline-block;margin-top:28px;font-weight:600;color:var(--primary);text-underline-offset:4px}.link:hover{text-decoration:underline}
+/* hero */
+#home{padding:56px 0 72px}
+#home .lead{margin-top:20px}
+/* industries */
+.cards{display:grid;gap:20px;margin-top:48px}
+@media(min-width:640px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{border:1px solid var(--border);padding:28px;transition:transform .3s,border-color .3s,box-shadow .3s}
+.card:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 12px 32px -24px var(--primary)}
+.card h3{margin-top:32px}
+.card i{display:block;width:40px;height:1px;background:var(--accent);margin-top:20px;transition:width .3s}
+.card:hover i{width:64px}
+.card svg.lucide{color:var(--primary);transition:color .3s}.card:hover svg.lucide{color:var(--accent)}
+/* partners */
+.ticks{margin-top:32px;max-width:30rem;display:grid;gap:12px}
+.ticks li{display:flex;align-items:center;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--border);font-weight:500;color:var(--primary)}
+.ticks li:before{content:"";width:6px;height:6px;background:var(--accent)}
+/* careers */
+#careers{background:rgba(253,241,234,.7)}
+.path{display:grid;gap:16px;margin-top:48px}
+@media(min-width:640px){.path{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.path{grid-template-columns:repeat(4,1fr)}}
+.path li{border:1px solid var(--border);background:#fff;padding:24px}
+.path small{font-size:.75rem;font-weight:600;letter-spacing:.16em;color:var(--accent)}
+.path p{margin-top:16px;font-weight:600;font-size:1.05rem;color:var(--primary)}
+.path li:after{content:"";display:block;height:2px;margin-top:20px;background:linear-gradient(90deg,var(--accent),transparent)}
+.cv{display:grid;gap:1px;margin-top:48px;background:var(--border);border:1px solid var(--border)}
+@media(min-width:1024px){.cv{grid-template-columns:7fr 5fr}}
+.cv>div{padding:40px 32px;background:#fff}
+.cv .dark{background:var(--primary);color:#fff;display:flex;flex-direction:column;justify-content:space-between;gap:32px}
+.cv .dark h3{color:#fff;font-size:1.4rem}
+.cv .dark p{margin-top:16px;color:rgba(255,255,255,.75);line-height:1.7}
+.cv .dark .btn{width:100%}.cv .dark .btn+.btn{margin-top:12px}
+.cv h3.t{font-size:1.4rem}
+.cv .sub{margin-top:12px;color:var(--muted);font-size:.9375rem;line-height:1.7}
+form{display:grid;gap:20px;margin-top:32px}
+.two{display:grid;gap:20px}
+@media(min-width:640px){.two{grid-template-columns:1fr 1fr}}
+label.l{display:block;margin-bottom:8px;font-size:.875rem;font-weight:500;color:var(--primary)}
+input[type=text],input[type=email]{width:100%;height:48px;padding:0 16px;font:1rem Inter,sans-serif;border:1px solid #cdd4e2;background:#fff;color:var(--fg)}
+.drop{display:flex;flex-direction:column;align-items:center;gap:10px;padding:40px 24px;text-align:center;border:1px dashed #cdd4e2;background:var(--secondary);cursor:pointer;transition:border-color .2s}
+.drop:hover,.drop:focus-within{border-color:var(--accent)}
+.drop b{font-weight:500;color:var(--primary)}.drop span{font-size:.875rem;color:var(--muted)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.ok{margin-top:32px;padding:20px;border:1px solid var(--accent);background:var(--accent-soft);font-weight:500;color:var(--primary)}
+.ok a{text-decoration:underline;text-underline-offset:4px}
+/* contact */
+#contact{background:var(--primary);color:#fff;border:0}
+#contact h2{color:#fff}
+#contact .eyebrow{margin:0}
+#contact .lead{color:rgba(255,255,255,.75)}
+.box{border:1px solid rgba(255,255,255,.15);padding:40px 32px}
+.box h3{color:#fff}
+.box address{margin-top:20px;line-height:1.7;color:rgba(255,255,255,.75)}
+.box dl{display:grid;gap:20px;margin-top:32px}
+.box dt{font-size:.875rem;color:rgba(255,255,255,.5)}
+.box dd{margin-top:4px;font-weight:600}
+.box a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+/* footer */
+footer{background:rgba(245,247,251,.6);border-top:1px solid var(--border)}
+.ft{display:grid;gap:48px;padding:56px 24px}
+@media(min-width:768px){.ft{grid-template-columns:5fr 3fr 4fr}}
+.ft p.tag{margin-top:24px;max-width:24rem;font-size:1.125rem;font-weight:500;color:var(--primary)}
+.ft address,.ft li{font-size:.875rem;color:var(--muted)}
+.ft address{margin-top:24px;line-height:1.7}
+.ft h4{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase}
+.ft ul{margin-top:20px;display:grid;gap:12px}
+.ft a:hover{color:var(--primary)}
+.ft .c{margin-top:24px;gap:8px}.ft .c a{font-weight:500;color:var(--primary)}
+.fb{border-top:1px solid var(--border);padding:24px;font-size:.75rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between}
+/* motion */
+.js .r{opacity:0}
+.r.v{animation:rv .7s ease forwards}
+@keyframes rv{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.vv-draw path,.vv-draw line{stroke-dasharray:var(--dash);stroke-dashoffset:var(--dash);transition:stroke-dashoffset 1.8s ease}
+.vv-draw.v path,.vv-draw.v line{stroke-dashoffset:0}
+.vv-node{transform-box:fill-box;transform-origin:center;animation:pulse 3.2s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35;transform:scale(1.5)}}
+svg.vv-draw{display:block;width:100%;height:auto;max-width:520px;margin:0 auto}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .r{opacity:1}.r.v,.vv-node{animation:none}.vv-draw path,.vv-draw line{stroke-dashoffset:0;transition:none}}
+</style>
+</head>
+<body>
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#home" class="logo" aria-label="Vividvelocity home"><img src="Side Logo.jpg.jpeg" alt="Vividvelocity"></a>
+    <nav class="nav-d" aria-label="Main">
+      <a href="#home" data-s="home">Home</a><a href="#about" data-s="about">About Us</a><a href="#industries" data-s="industries">Industries</a><a href="#partnerships" data-s="partnerships">Partnerships</a><a href="#careers" data-s="careers">Careers</a><a href="#contact" data-s="contact">Contact</a>
+    </nav>
+    <div class="cta-d">
+      <a href="#partnerships" class="btn b-o">Partner With Us</a>
+      <a href="#careers" class="btn b-a">Find Your Opportunity</a>
+    </div>
+    <button class="tg" id="tg" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Open menu">&#9776;</button>
+  </div>
+  <div id="mnav">
+    <nav aria-label="Mobile">
+      <a href="#home" data-s="home">Home</a><a href="#about" data-s="about">About Us</a><a href="#industries" data-s="industries">Industries</a><a href="#partnerships" data-s="partnerships">Partnerships</a><a href="#careers" data-s="careers">Careers</a><a href="#contact" data-s="contact">Contact</a>
+      <a href="#careers" class="btn b-a">Find Your Opportunity</a>
+      <a href="#partnerships" class="btn b-o">Partner With Us</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home">
+  <div class="wrap split">
+    <div class="r">
+      <p class="eyebrow">Recruitment & Staffing</p>
+      <h1>Your Recruitment Partner for Smarter Hiring.</h1>
+      <p class="lead">Vividvelocity connects exceptional talent with leading organizations across India, helping professionals build rewarding careers and helping businesses find the right people.</p>
+      <div class="row">
+        <a href="#careers" class="btn b-a">Find Your Opportunity</a>
+        <a href="#partnerships" class="btn b-o">Connect With Us</a>
+      </div>
+    </div>
+    <div class="r" data-d="120" id="g-hero"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="split r" style="align-items:start">
+      <div>
+        <p class="eyebrow">Why Vividvelocity</p>
+        <h2>People are the foundation of every successful business.</h2>
+      </div>
+      <p class="lead" style="margin-top:0">Vividvelocity helps companies build high-performing teams through efficient, reliable and quality-driven recruitment solutions.</p>
+    </div>
+    <div class="grid g4">
+      <div class="r"><i data-lucide="badge-check"></i><h3>Quality</h3><p>Every search is measured by the strength of the match, not the speed of the shortlist.</p></div>
+      <div class="r" data-d="90"><i data-lucide="eye"></i><h3>Transparency</h3><p>Open, honest communication with candidates and clients at every stage of the process.</p></div>
+      <div class="r" data-d="180"><i data-lucide="clock-3"></i><h3>Timely Delivery</h3><p>Efficient, reliable hiring support that respects the timelines your business runs on.</p></div>
+      <div class="r" data-d="270"><i data-lucide="user-round-check"></i><h3>Candidate-First Approach</h3><p>Professionals are guided towards roles that genuinely support long-term career growth.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="what">
+  <div class="wrap split">
+    <div class="r">
+      <p class="eyebrow">What we do</p>
+      <h2>Connecting exceptional talent with meaningful opportunity.</h2>
+      <p class="lead">Vividvelocity connects exceptional talent with leading organizations across India, delivering customized hiring solutions that place the right candidate at the right time.</p>
+      <p class="lead">The result is sustainable organizational growth for businesses, and rewarding careers for the professionals we work with.</p>
+    </div>
+    <div class="r" data-d="120" id="g-conn"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="grid g2 mv" style="margin-top:0">
+      <div class="r"><i data-lucide="target"></i><h3>Our Mission</h3><p>To bridge the gap between exceptional talent and outstanding opportunities through professional, ethical, and efficient recruitment solutions.</p></div>
+      <div class="r" data-d="120"><i data-lucide="eye"></i><h3>Our Vision</h3><p>To become one of India's most trusted IT recruitment partners by delivering quality talent, building long-term client relationships, and creating career opportunities for skilled professionals.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="industries">
+  <div class="wrap">
+    <div class="r" style="max-width:40rem"><p class="eyebrow">Sectors</p><h2>Industries We Serve</h2></div>
+    <div class="cards">
+      <article class="card r"><i data-lucide="cpu"></i><h3>Information Technology</h3><i></i></article>
+      <article class="card r" data-d="70"><i data-lucide="banknote"></i><h3>Banking &amp; Financial Services</h3><i></i></article>
+      <article class="card r" data-d="140"><i data-lucide="heart-pulse"></i><h3>Healthcare Technology</h3><i></i></article>
+      <article class="card r" data-d="210"><i data-lucide="shopping-cart"></i><h3>E-Commerce</h3><i></i></article>
+      <article class="card r" data-d="280"><i data-lucide="building-2"></i><h3>Manufacturing</h3><i></i></article>
+      <article class="card r" data-d="350"><i data-lucide="rocket"></i><h3>Startups</h3><i></i></article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="partnerships">
+  <div class="wrap split">
+    <div class="r">
+      <p class="eyebrow">Strategic Partnerships</p>
+      <h2>Let's Grow Together</h2>
+      <p class="lead">Vividvelocity is open to building relationships with recruitment agencies, staffing firms and business partners who share our commitment to quality hiring.</p>
+      <ul class="ticks"><li>Recruitment agencies</li><li>Staffing firms</li><li>Business partners</li></ul>
+      <div class="row"><a href="#contact" class="btn b-p">Partner With Us</a></div>
+    </div>
+    <div class="r" data-d="120" id="g-part"></div>
+  </div>
+</section>
+
+<section id="careers">
+  <div class="wrap">
+    <div class="r" style="max-width:48rem">
+      <p class="eyebrow">Careers</p>
+      <h2>Build Your Future With Us</h2>
+      <p class="lead">Are you passionate about technology and looking for your next career opportunity? Vividvelocity works with leading organizations to connect talented professionals with exciting opportunities.</p>
+    </div>
+    <ol class="path">
+      <li class="r"><small>01</small><p>Your Skills</p></li>
+      <li class="r" data-d="140"><small>02</small><p>Vividvelocity</p></li>
+      <li class="r" data-d="280"><small>03</small><p>Right Opportunity</p></li>
+      <li class="r" data-d="420"><small>04</small><p>Career Growth</p></li>
+    </ol>
+    <div class="cv r" data-d="100">
+      <div id="cvBox">
+        <h3 class="t">Upload Your Resume</h3>
+        <p class="sub">Share your profile with our recruitment team and we will reach out when a suitable opportunity matches your skills.</p>
+        <form id="cvForm">
+          <div class="two">
+            <div><label class="l" for="cv-name">Full name</label><input id="cv-name" name="name" type="text" required autocomplete="name"></div>
+            <div><label class="l" for="cv-email">Email address</label><input id="cv-email" name="email" type="email" required autocomplete="email"></div>
+          </div>
+          <div>
+            <label class="l" for="cv-file">Resume (PDF or Word)</label>
+            <label class="drop" for="cv-file"><i data-lucide="upload-cloud"></i><b id="fn">Choose a file to upload</b><span>PDF, DOC or DOCX</span></label>
+            <input class="sr" id="cv-file" name="resume" type="file" accept=".pdf,.doc,.docx">
+          </div>
+          <div><button class="btn b-a" type="submit">Upload Your Resume</button></div>
+        </form>
+      </div>
+      <div class="dark">
+        <div>
+          <h3>Talk to a Recruitment Specialist</h3>
+          <p>Prefer a conversation first? Speak with our team about your skills, your goals and the opportunities that fit your career path.</p>
+        </div>
+        <div>
+          <a class="btn b-w" href="tel:+918618005687">Talk to a Recruitment Specialist</a>
+          <a class="btn b-a" href="#contact">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap split" style="align-items:start">
+    <div class="r">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's Connect</h2>
+      <p class="lead">Whether you are exploring your next career move, hiring for your team, or looking to build a recruitment partnership, our team would be glad to hear from you.</p>
+      <div class="row"><a href="#careers" class="btn b-a">Find Your Opportunity</a><a href="#partnerships" class="btn b-w">Partner With Us</a></div>
+    </div>
+    <div class="box r" data-d="120">
+      <h3>Vividvelocity Pvt. Ltd.</h3>
+      <address>Surya Elegance Apartment<br>Gulla Reddy Layout<br>Chandapura, Bengaluru<br>Karnataka &ndash; 560081</address>
+      <dl>
+        <div><dt>Phone</dt><dd><a href="tel:+918618005687">+91 8618005687</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:info@vividvelocity.com">info@vividvelocity.com</a></dd></div>
+        <div><dt>Website</dt><dd>www.vividvelocity.com</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap ft" style="max-width:1180px">
+    <div>
+      <a href="#home" class="logo" aria-label="Vividvelocity home"><img src="Side Logo.jpg.jpeg" alt="Vividvelocity"></a>
+      <p class="tag">Accelerating Talent. Empowering Businesses.</p>
+      <address>Surya Elegance Apartment, Gulla Reddy Layout,<br>Chandapura, Bengaluru, Karnataka &ndash; 560081</address>
+    </div>
+    <nav aria-label="Footer">
+      <h4>Navigate</h4>
+      <ul><li><a href="#home">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#industries">Industries</a></li><li><a href="#partnerships">Partnerships</a></li><li><a href="#careers">Careers</a></li><li><a href="#contact">Contact</a></li></ul>
+    </nav>
+    <div>
+      <h4>Recruitment Solutions</h4>
+      <ul><li>IT Recruitment</li><li>Permanent Staffing</li><li>Contract Staffing</li><li>Executive Search</li><li>Recruitment Solutions</li></ul>
+      <ul class="c"><li><a href="tel:+918618005687">+91 8618005687</a></li><li><a href="mailto:info@vividvelocity.com">info@vividvelocity.com</a></li></ul>
+    </div>
+  </div>
+  <div class="fb wrap" style="max-width:1180px"><p>&copy; 2026 Vividvelocity Pvt. Ltd. All Rights Reserved.</p><p><a href="https://www.vividvelocity.com">www.vividvelocity.com</a></p></div>
+</footer>
+
+<script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.min.js"></script>
+<script>
+document.documentElement.classList.add('js');
+const P='#0f2a5c',A='#e8702a',$=(s,r=document)=>[...r.querySelectorAll(s)];
+const nodes=(pts,c,r,step,off=0)=>pts.map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${c}" class="vv-node" style="animation-delay:${i*step+off}ms"/>`).join('');
+const sq=(x,y,s,c)=>`<rect x="${x-s}" y="${y-s}" width="${s*2}" height="${s*2}" fill="none" stroke="${c}" stroke-width="1.5"/>`;
+
+/* SVG graphics (ported from visuals.tsx) */
+const talent=[[40,70],[26,150],[58,226],[34,302],[72,372],[30,430]];
+const goals=[[470,108],[470,240],[470,372]];
+document.getElementById('g-hero').innerHTML=`<svg class="vv-draw" viewBox="0 0 520 480" role="img" aria-label="Abstract visualisation of professionals connecting through Vividvelocity toward opportunity and career growth" style="--dash:900">
+<defs><linearGradient id="vvLine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="520" y2="0"><stop offset="0" stop-color="${P}" stop-opacity=".15"/><stop offset=".7" stop-color="${P}" stop-opacity=".55"/><stop offset="1" stop-color="${A}" stop-opacity=".9"/></linearGradient></defs>
+<g stroke="url(#vvLine)" stroke-width="1.25" fill="none">${talent.map(([x,y])=>`<path d="M${x} ${y}C190 ${y},210 240,300 240"/>`).join('')}<path d="M300 240C370 240,390 120,470 108"/><path d="M300 240C380 240,400 240,470 240"/><path d="M300 240C370 240,390 360,470 372"/></g>
+${nodes(talent,P,4,700)}
+<circle cx="300" cy="240" r="26" fill="none" stroke="${P}"/><circle cx="300" cy="240" r="9" fill="${P}"/><circle cx="300" cy="240" r="44" fill="none" stroke="${A}" stroke-opacity=".4"/>
+${goals.map(([x,y])=>sq(x,y,9,A)).join('')}${nodes(goals,A,3.5,900,400)}</svg>`;
+
+document.getElementById('g-conn').innerHTML=`<svg class="vv-draw" viewBox="0 0 400 320" aria-hidden="true" style="--dash:700;max-width:480px">
+<g stroke="${P}" stroke-opacity=".35" fill="none"><path d="M20 260C120 260,120 60,220 60"/><path d="M20 200C140 200,160 160,300 160"/><path d="M20 140C120 140,140 260,340 250"/></g>
+<g fill="${P}"><circle cx="20" cy="260" r="4"/><circle cx="20" cy="200" r="4"/><circle cx="20" cy="140" r="4"/></g>
+${nodes([[220,60],[300,160],[340,250]],A,5,1200)}
+<rect x="150" y="120" width="80" height="80" fill="none" stroke="${P}" stroke-opacity=".25"/></svg>`;
+
+const outer=[[60,60],[240,30],[400,90],[420,250],[250,300],[70,240]];
+document.getElementById('g-part').innerHTML=`<svg class="vv-draw" viewBox="0 0 480 330" role="img" aria-label="Abstract network of partner organisations connecting through Vividvelocity" style="--dash:500;max-width:520px">
+<g stroke="${P}" stroke-opacity=".4">${outer.map(([x,y])=>`<line x1="${x}" y1="${y}" x2="240" y2="165"/>`).join('')}</g>
+${outer.map(([x,y])=>sq(x,y,10,P)).join('')}${nodes(outer,A,3,800)}
+<circle cx="240" cy="165" r="30" fill="none" stroke="${A}" stroke-opacity=".5"/><circle cx="240" cy="165" r="10" fill="${P}"/></svg>`;
+
+if(window.lucide)lucide.createIcons();
+
+/* scroll reveal + line drawing */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -60px 0px'});
+$('.r').forEach(el=>{el.style.animationDelay=(el.dataset.d||0)+'ms';io.observe(el)});
+$('.vv-draw').forEach(el=>io.observe(el));
+
+/* sticky header state */
+const hd=document.getElementById('hd'),tg=document.getElementById('tg'),mn=document.getElementById('mnav');
+const sc=()=>hd.classList.toggle('s',scrollY>8||mn.classList.contains('open'));
+addEventListener('scroll',sc,{passive:true});sc();
+
+/* mobile menu */
+function menu(open){mn.classList.toggle('open',open);tg.setAttribute('aria-expanded',open);tg.setAttribute('aria-label',open?'Close menu':'Open menu');tg.innerHTML=open?'&#10005;':'&#9776;';document.body.style.overflow=open?'hidden':'';sc()}
+tg.onclick=()=>menu(!mn.classList.contains('open'));
+$('#mnav a').forEach(a=>a.addEventListener('click',()=>menu(false)));
+addEventListener('resize',()=>innerWidth>=1024&&menu(false));
+
+/* active nav link on scroll */
+const secs=['home','about','industries','partnerships','careers','contact'].map(id=>document.getElementById(id));
+const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){$('[data-s]').forEach(a=>a.classList.toggle('on',a.dataset.s===e.target.id))}}),{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>spy.observe(s));
+
+/* resume form */
+document.getElementById('cv-file').onchange=e=>{document.getElementById('fn').textContent=e.target.files[0]?.name||'Choose a file to upload'};
+document.getElementById('cvForm').onsubmit=e=>{e.preventDefault();
+  document.getElementById('cvBox').insertAdjacentHTML('beforeend','<p class="ok" role="status">Thank you. Your details have been noted. You can also email your resume directly to <a href="mailto:info@vividvelocity.com">info@vividvelocity.com</a>.</p>');
+  e.target.remove()};
+</script>
+</body>
+</html>
